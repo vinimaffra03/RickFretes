@@ -59,24 +59,17 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-[0_1px_8px_rgba(0,0,0,0.08)]"
-          : "bg-white/55 backdrop-blur-md"
+          ? "bg-white shadow-[0_1px_8px_rgba(0,0,0,0.08)]"
+          : "bg-white/80 backdrop-blur-md"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         {/* Logo */}
-        <a href="#hero" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded bg-[var(--color-dark)] text-lg font-bold text-white">
-            R
-          </div>
-          <div className="leading-tight">
-            <span className="text-base font-bold tracking-tight text-[var(--color-dark)]">
-              Rick Fretes
-            </span>
-            <span className="block text-[10px] uppercase tracking-widest text-gray-400">
-              Mudancas &amp; Transportes
-            </span>
-          </div>
+        <a href="#hero" className="flex items-center">
+          <span className="text-xl font-extrabold tracking-tight">
+            <span className="text-[var(--color-dark)]">Rick</span>
+            <span className="text-[var(--color-brand)]">Fretes</span>
+          </span>
         </a>
 
         {/* Desktop nav */}
