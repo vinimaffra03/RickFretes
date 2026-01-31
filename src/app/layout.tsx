@@ -20,6 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9373180671674294"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={`${geistSans.variable} font-sans antialiased`}>
         {children}
       </body>
